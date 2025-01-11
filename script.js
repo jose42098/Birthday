@@ -1,3 +1,4 @@
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
+function playMusic() {
+    var song = document.getElementById("birthdaySong");
+    song.play();
 }
