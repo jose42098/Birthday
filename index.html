@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Popup</title>
+    <title>Happy Birthday!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <h1>Happy Birthday!</h1>
-            <p>Wishing you a wonderful day filled with joy and happiness!</p>
-            <button onclick="closePopup()">Close</button>
-        </div>
+    <div class="container">
+        <h1>Happy Birthday [Name]!</h1>
+        <img src="birthday-cake.jpg" alt="Birthday Cake" class="cake-img">
+        <p class="message">Wishing you a day filled with happiness and a year filled with joy. Happy Birthday!</p>
+        <button onclick="playMusic()">Play Birthday Song</button>
     </div>
+    <audio id="birthdaySong">
+        <source src="birthday_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <script src="script.js"></script>
 </body>
 </html>
